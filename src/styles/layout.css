@@ -1,0 +1,44 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 40px; /* 핵심 */
+  background: #f5f6f8;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 240px;
+  background: #0f3d2e;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 0;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.15s;
+}
+
+.sidebar-menu li:hover {
+  opacity: 1;
+  transform: translateX(4px);
+}
